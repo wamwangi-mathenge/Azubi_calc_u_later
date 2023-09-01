@@ -14,11 +14,12 @@ def divide(x, y):
         return x / y
 
 print("Simple Calculator")
-print("1. Add")
-print("2. Subtract")
-print("3. Multiply")
-print("4. Divide")
-
+print()
+print("For Addition, Press 1")
+print("For Subtraction, Press 2")
+print("For Multiplication, Press 3")
+print("For Division, Press 4")
+print()
 choice = input("Select operation (1/2/3/4): ")
 
 if choice not in ["1", "2", "3", "4"]:
@@ -26,16 +27,21 @@ if choice not in ["1", "2", "3", "4"]:
 else:
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: "))
+    print()
 
     if choice == "1":
         result = add(num1, num2)
-        print("Result: " + result)
+        # print("Result: " + result)
+        print(f"Result: {result}") # String concatenation
     elif choice == "2":
         result = subtract(num1, num2)
-        print("Result: " + result)
+        # print("Result: " + result)
+        print(f"Result: {result}") # String concatenation
     elif choice == "3":
         result = multiply(num1, num2)
-        print("Result: " + result)
+        # print("Result: " + result)
+        print(f"Result: {result}") # String concatenation
     elif choice == "4":
         result = divide(num1, num2)
-        print("Result: " + result)
+        # print("Result: " + result)
+        print(f"Result: {result}") # String concatenation
